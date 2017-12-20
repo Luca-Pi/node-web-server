@@ -1,0 +1,12 @@
+{
+  "name": "node-web-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.0.39",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1"
+  }
+}
