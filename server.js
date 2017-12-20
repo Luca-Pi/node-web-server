@@ -48,6 +48,11 @@ app.get('/about',(req, res) => {
     pageContent: 'a page about da app!'
   });
 });
+app.get('/project',(req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page'
+  });
+});
 
 
 app.get('/bad', (req, res) => {
