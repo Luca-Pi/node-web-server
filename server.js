@@ -3,6 +3,8 @@ const hbs = require('hbs');
 const fs = require('fs');
 let app = express();
 
+const PORT = process.env.PORT || 3000;
+
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
@@ -52,7 +54,7 @@ app.get('/bad', (req, res) => {
   res.status(404).send('<h1>Error: 404</h1>' + '<h2>Page Not Found</h2>')
 });
 
-app.listen(3000, () => {
-  console.log('App server is up on http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`App server is up on port: ${PORT}`);
 });
 
